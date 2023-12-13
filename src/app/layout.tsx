@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: "revalidatTag issue",
+  title: "revalidateTag issue",
 };
 
 export default function RootLayout({
