@@ -5,7 +5,7 @@ export default async function Layout({
 }: {
   children: React.ReactNode;
 }) {
-  const data = await fetch('https://worldtimeapi.org/api/timezone/Etc/UTC', { next: { tags: ['date?test=test'] } }).then((res) => res.json());
+  const data = await fetch('https://worldtimeapi.org/api/timezone/Etc/UTC', { next: { tags: ['date'] } }).then((res) => res.json());
   return (
     <>
       <header className="bg-gray-200 px-8 py-2 flex justify-between">

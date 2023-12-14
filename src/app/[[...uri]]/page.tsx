@@ -5,7 +5,7 @@ export default async function Page({ params }: { params: { uri: string[] } }) {
   if (params.uri) {
     // Only fetch to populate more cache entries
     await fetch(`https://jsonplaceholder.typicode.com/todos/${params.uri[0]}`, {
-      next: { tags: [`page?uri=${params.uri[0]}`] },
+      next: { tags: [`page_${params.uri[0]}`] },
     });
   }
 
